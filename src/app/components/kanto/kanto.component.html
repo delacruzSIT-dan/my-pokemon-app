@@ -1,0 +1,9 @@
+<h2 class="region-title">Kanto Gym Leaders</h2>
+<div class="leader-grid">
+  @for (leader of kantoLeaders; track leader.name) {
+    <app-leader-info 
+      [leader]="leader" 
+      (monologueToggled)="onLeaderSelected($event)">
+    </app-leader-info>
+  }
+</div>

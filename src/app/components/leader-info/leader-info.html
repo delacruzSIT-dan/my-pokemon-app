@@ -1,0 +1,22 @@
+<div class="card" [style.borderTopColor]="leader.color">
+  <h3 [style.color]="leader.color">{{ leader.name }}</h3>
+  <p><strong>Badge:</strong> {{ leader.badge }}</p>
+  <p><strong>Location:</strong> {{ leader.location }}</p>
+
+  <h4>Pokemon Team:</h4>
+  <ul>
+    @for (member of leader.team; track member.pokemon) {
+      <li>{{ member.pokemon }} - Lv. {{ member.level }}</li>
+    }
+  </ul>
+
+  <button class="monologue-btn" [style.backgroundColor]="leader.color" (click)="toggleMonologue()">
+    {{ showMonologue ? 'Hide Monologue' : 'Monologue / Description' }}
+  </button>
+
+  @if (showMonologue) {
+    <div class="monologue-box">
+      <p><em>"{{ leader.monologue }}"</em></p>
+    </div>
+  }
+</div>

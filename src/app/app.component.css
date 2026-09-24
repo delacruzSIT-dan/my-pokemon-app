@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #3c5aa6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
