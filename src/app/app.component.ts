@@ -8,11 +8,12 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   template: `
     <header style="text-align: center; margin-bottom: 20px;">
       <h1>Pokemon Region Gym Leaders</h1>
-      
+
       <nav class="navbar">
         <a routerLink="/home" routerLinkActive="active">Home</a>
         <a routerLink="/kanto" routerLinkActive="active">Kanto Region</a>
         <a routerLink="/johto" routerLinkActive="active">Johto Region</a>
+        <a routerLink="/hoenn" routerLinkActive="active">Hoenn Region</a>
       </nav>
     </header>
 
